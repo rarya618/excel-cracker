@@ -126,7 +126,7 @@ export default function Home() {
           max-width: 800px;
           margin-top: 3rem;
           background: rgba(19, 30, 41, 0.04);
-          border: 2px dashed rgba(19, 30, 41, 0.16)
+          border: 2px dashed rgba(19, 30, 41, 0.16);
           border-radius: 17px;
           float: right;
         }
