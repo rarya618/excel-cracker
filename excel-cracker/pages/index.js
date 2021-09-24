@@ -84,6 +84,7 @@ export default function Home() {
         .green {
           color: #007C58;
           text-decoration: none;
+          font-weight: 600;
         }
 
         a:hover,
