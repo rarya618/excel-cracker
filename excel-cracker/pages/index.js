@@ -26,6 +26,7 @@ export default function Home() {
         </p>
 
         <div className="file-container">
+          <input type="file" className="file-handler" />
           <a href="#" className="file-inner">
             <h3>Step 1: Please upload your file here &rarr;</h3>
             <p>Drag and Drop | Upload from local</p>
@@ -148,6 +149,11 @@ export default function Home() {
           border: 2px dashed rgba(0, 124, 88, 0.16);
           border-radius: 17px;
           float: right;
+        }
+
+        .file-handler {
+          width: 100%;
+          height: 100%;
         }
 
         .file-inner {
