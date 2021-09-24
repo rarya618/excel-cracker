@@ -132,21 +132,20 @@ export default function Home() {
         }
 
         .file-inner {
-          margin: 1rem;
+          margin: 0.5rem;
           flex-basis: 45%;
-          padding: 1.5rem;
+          padding: 1.5 rem 1rem;
           text-align: left;
           color: inherit;
           text-decoration: none;
-          border: 1px solid #eaeaea;
-          border-radius: 10px;
+          border: none;
           transition: color 0.15s ease, border-color 0.15s ease;
         }
 
         .file-inner:hover,
         .file-inner:focus,
         .file-inner:active {
-          color: #0070f3;
+          color: #007c58;
         }
 
         .file-inner h3 {
@@ -156,7 +155,7 @@ export default function Home() {
 
         .file-inner p {
           margin: 0;
-          font-size: 1.25rem;
+          font-size: 1rem;
           line-height: 1.5;
         }
 
