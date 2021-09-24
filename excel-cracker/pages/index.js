@@ -10,14 +10,14 @@ export default function Home() {
 
       <main>
         <header>
-          <h1 className="logo">ExcelCracker</h1>
+          <h1 className="logo green">ExcelCracker</h1>
           <ul className="nav">
             <li><a href="#">Terms and Conditions</a></li>
             <li><a href="#">Privacy Policy</a></li>
           </ul>
         </header>
         <h2 className="title">
-          If you have forgotten the password to your Excel <a href="#">spreadsheet</a>, you are in the right place
+          If you have forgotten the password to your Excel <span className="green">spreadsheet</span>, you are in the right place
         </h2>
 
         <p className="description">
@@ -81,14 +81,14 @@ export default function Home() {
           text-decoration: none;
         }
 
-        .title a {
+        .green {
           color: #007C58;
           text-decoration: none;
         }
 
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
+        a:hover,
+        a:focus,
+        a:active {
           text-decoration: underline;
         }
 
