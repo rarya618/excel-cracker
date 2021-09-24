@@ -33,7 +33,7 @@ export default function Home() {
       </main>
 
       <style jsx>{`
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap');
         * {
           font-family: 'Inter', sans-serif;
           font-weight: 500;
@@ -161,6 +161,7 @@ export default function Home() {
 
         .logo {
           height: 1em;
+          font-weight: 700;
         }
 
         @media (max-width: 600px) {
