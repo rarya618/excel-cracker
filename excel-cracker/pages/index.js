@@ -24,8 +24,8 @@ export default function Home() {
           ExcelCracker is a simple and hassle free way to regain access to your 'protected' spreadsheet in seconds.
         </p>
 
-        <div className="grid">
-          <a href="#" className="card">
+        <div className="file">
+          <a href="#" className="file-inner">
             <h3>Step 1: Please upload your file here &rarr;</h3>
             <p>Drag and Drop | Upload from local</p>
           </a>
@@ -118,17 +118,20 @@ export default function Home() {
             DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
         }
 
-        .grid {
+        .file {
           display: flex;
           align-items: center;
           justify-content: center;
           flex-wrap: wrap;
-
           max-width: 800px;
           margin-top: 3rem;
+          background: rgba(19, 30, 41, 0.04);
+          border: 2px dashed rgba(19, 30, 41, 0.16)
+          border-radius: 17px;
+          float: right;
         }
 
-        .card {
+        .file-inner {
           margin: 1rem;
           flex-basis: 45%;
           padding: 1.5rem;
@@ -140,19 +143,19 @@ export default function Home() {
           transition: color 0.15s ease, border-color 0.15s ease;
         }
 
-        .card:hover,
-        .card:focus,
-        .card:active {
+        .file-inner:hover,
+        .file-inner:focus,
+        .file-inner:active {
           color: #0070f3;
           border-color: #0070f3;
         }
 
-        .card h3 {
+        .file-inner h3 {
           margin: 0 0 1rem 0;
           font-size: 1.5rem;
         }
 
-        .card p {
+        .file-inner p {
           margin: 0;
           font-size: 1.25rem;
           line-height: 1.5;
@@ -163,7 +166,7 @@ export default function Home() {
         }
 
         @media (max-width: 600px) {
-          .grid {
+          .file {
             width: 100%;
             flex-direction: column;
           }
@@ -178,7 +181,6 @@ export default function Home() {
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
             Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
             sans-serif;
-        }
 
         * {
           box-sizing: border-box;
