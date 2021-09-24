@@ -9,13 +9,13 @@ export default function Home() {
       </Head>
 
       <main>
-        <div className="header">
+        <header>
           <h1 className="logo green">ExcelCracker</h1>
           <ul className="nav">
             <li><a href="#">Terms and Conditions</a></li>
             <li><a href="#">Privacy Policy</a></li>
           </ul>
-        </div>
+        </header>
         <h2 className="title">
           If you have forgotten the password to your Excel <span className="green">spreadsheet</span>, you are in the right place
         </h2>
@@ -91,6 +91,20 @@ export default function Home() {
         a:focus,
         a:active {
           text-decoration: underline;
+        }
+
+        header {
+          height: 70px;
+        }
+
+        header .logo {
+          float: left;
+        }
+
+        header .nav {
+          float: right;
+          list-style-type: none;
+          display: inline-block;
         }
 
         .title {
