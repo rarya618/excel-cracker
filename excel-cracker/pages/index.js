@@ -24,7 +24,7 @@ export default function Home() {
           ExcelCracker is a simple and hassle free way to regain access to your 'protected' spreadsheet in seconds.
         </p>
 
-        <div className="file">
+        <div className="file-container">
           <a href="#" className="file-inner">
             <h3>Step 1: Please upload your file here &rarr;</h3>
             <p>Drag and Drop | Upload from local</p>
@@ -118,7 +118,7 @@ export default function Home() {
             DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
         }
 
-        .file {
+        .file-container {
           display: flex;
           align-items: center;
           justify-content: center;
@@ -166,7 +166,7 @@ export default function Home() {
         }
 
         @media (max-width: 600px) {
-          .file {
+          .file-container {
             width: 100%;
             flex-direction: column;
           }
