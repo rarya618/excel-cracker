@@ -9,6 +9,13 @@ export default function Home() {
       </Head>
 
       <main>
+        <header>
+          <h1 className="logo">ExcelCracker</h1>
+          <ul className="nav">
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </header>
         <h2 className="title">
           If you have forgotten the password to your Excel <a href="#">spreadsheet</a>, you are in the right place
         </h2>
@@ -18,9 +25,9 @@ export default function Home() {
         </p>
 
         <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
+          <a href="#" className="card">
+            <h3>Step 1: Please upload your file here &rarr;</h3>
+            <p>Drag and Drop | Upload from local</p>
           </a>
         </div>
       </main>
