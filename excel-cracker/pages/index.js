@@ -9,13 +9,13 @@ export default function Home() {
       </Head>
 
       <main>
-        <header>
+        <div className="header">
           <h1 className="logo green">ExcelCracker</h1>
           <ul className="nav">
             <li><a href="#">Terms and Conditions</a></li>
             <li><a href="#">Privacy Policy</a></li>
           </ul>
-        </header>
+        </div>
         <h2 className="title">
           If you have forgotten the password to your Excel <span className="green">spreadsheet</span>, you are in the right place
         </h2>
