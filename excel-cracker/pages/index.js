@@ -25,18 +25,13 @@ export default function Home() {
         </div>
       </main>
 
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className="logo" />
-        </a>
-      </footer>
-
       <style jsx>{`
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap');
+        * {
+          font-family: 'Inter', sans-serif;
+          font-weight: 500;
+        }
+        
         .container {
           min-height: 100vh;
           padding: 0 0.5rem;
@@ -80,7 +75,7 @@ export default function Home() {
         }
 
         .title a {
-          color: #0070f3;
+          color: #007C58;
           text-decoration: none;
         }
 
@@ -93,17 +88,18 @@ export default function Home() {
         .title {
           margin: 0;
           line-height: 1.15;
-          font-size: 4rem;
+          font-size: 2rem;
+          font-weight: 600;
         }
 
         .title,
         .description {
-          text-align: center;
+          text-align: left;
         }
 
         .description {
           line-height: 1.5;
-          font-size: 1.5rem;
+          font-size: 1.2rem;
         }
 
         code {
