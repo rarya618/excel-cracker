@@ -8,14 +8,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <header>
+        <h1 className="logo green">ExcelCracker</h1>
+        <ul className="nav">
+          <li><a href="#">Terms and Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </header>
+      
       <main>
-        <header>
-          <h1 className="logo green">ExcelCracker</h1>
-          <ul className="nav">
-            <li><a href="#">Terms and Conditions</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-          </ul>
-        </header>
         <h2 className="title">
           If you have forgotten the password to your Excel <span className="green">spreadsheet</span>, you are in the right place
         </h2>
