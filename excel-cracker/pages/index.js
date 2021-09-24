@@ -98,6 +98,7 @@ export default function Home() {
           height: 70px;
           width: 100%;
           position: sticky;
+          box-shadow: 0px 1px 1px rgba(0, 124, 88, 0.04), 0px 9px 36px -10px rgba(0, 124, 88, 0.1);
         }
 
         header .logo {
