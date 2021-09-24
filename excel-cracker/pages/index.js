@@ -96,6 +96,8 @@ export default function Home() {
 
         header {
           height: 70px;
+          width: 100%;
+          position: sticky;
         }
 
         header .logo {
