@@ -125,8 +125,8 @@ export default function Home() {
           flex-wrap: wrap;
           max-width: 800px;
           margin-top: 3rem;
-          background: rgba(19, 30, 41, 0.04);
-          border: 2px dashed rgba(19, 30, 41, 0.16);
+          background: rgba(0, 124, 88, 0.04);
+          border: 2px dashed rgba(0, 124, 88, 0.16);
           border-radius: 17px;
           float: right;
         }
@@ -147,7 +147,6 @@ export default function Home() {
         .file-inner:focus,
         .file-inner:active {
           color: #0070f3;
-          border-color: #0070f3;
         }
 
         .file-inner h3 {
