@@ -21,15 +21,20 @@ export default function Home() {
           If you have forgotten the password to your Excel <span className="green">spreadsheet</span>, you are in the right place
         </h2>
 
+        <hr className="short-line" />
+
         <p className="description">
           ExcelCracker is a simple and hassle free way to regain access to your 'protected' spreadsheet in seconds.
         </p>
 
         <div className="file-container">
-          <input type="file" className="file-handler" />
+          <input type="file" className="file-handler" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"/>
           <a href="#" className="file-inner">
-            <h3>Step 1: Please upload your file here &rarr;</h3>
+            <img className="file-img" src="/stack.png" />
+            <img className="file-img" src="/cloud.png" />
+            <h3>Step 1: Please upload your file here</h3>
             <p>Drag and Drop | Upload from local</p>
+            <p>file type: xlsx, csv ...</p>
           </a>
         </div>
       </main>
@@ -109,23 +114,28 @@ export default function Home() {
         header .nav {
           float: right;
           list-style-type: none;
+          color: #768692;
+        }
+
+        .nav li {
           display: inline-block;
+          padding: 10px;
         }
 
         .title {
           margin: 0;
-          line-height: 1.15;
           font-size: 2rem;
           font-weight: 600;
         }
 
         .title,
+        .short-line,
         .description {
           text-align: left;
+          line-height: 1.5;
         }
 
         .description {
-          line-height: 1.5;
           font-size: 1.2rem;
         }
 
@@ -138,6 +148,14 @@ export default function Home() {
             DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
         }
 
+        .short-line {
+          position: static;
+          width: 60px;
+          height: 0px;
+          left: 0;
+          border: 2px solid #007C58;
+        }
+
         .file-container {
           display: flex;
           align-items: center;
@@ -146,14 +164,31 @@ export default function Home() {
           max-width: 800px;
           margin-top: 3rem;
           background: rgba(0, 124, 88, 0.04);
+          color: #768692;
+          font-weight: 500;
           border: 2px dashed rgba(0, 124, 88, 0.16);
           border-radius: 17px;
           float: right;
         }
 
+        .file-container * {
+          text-align: center;
+          line-height: 35px;
+        }
+        
+        .file-img {
+          padding: 10px 20px;
+        }
+
         .file-handler {
           width: 100%;
-          height: 100%;
+          // height: 100%;
+        }
+
+        .file-handler::file-selector-button {
+          // width: 100%;
+          // height: 100%;
+          opacity: 0.5;
         }
 
         .file-inner {
