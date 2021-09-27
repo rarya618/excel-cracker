@@ -17,25 +17,29 @@ export default function Home() {
       </header>
       
       <main>
-        <h2 className="title">
-          If you have forgotten the password to your Excel <span className="green">spreadsheet</span>, you are in the right place
-        </h2>
+        <div className="sub-container">
+          <h2 className="title">
+            If you have forgotten the password to your Excel <span className="green">spreadsheet</span>, you are in the right place
+          </h2>
 
-        <hr className="short-line" />
+          <hr className="short-line" />
 
-        <p className="description">
-          ExcelCracker is a simple and hassle free way to regain access to your 'protected' spreadsheet in seconds.
-        </p>
+          <p className="description">
+            ExcelCracker is a simple and hassle free way to regain access to your 'protected' spreadsheet in seconds.
+          </p>
+        </div>
 
-        <div className="file-container">
-          <input type="file" className="file-handler" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"/>
-          <a href="#" className="file-inner">
-            <img className="file-img" src="/stack.png" />
-            <img className="file-img" src="/cloud.png" />
-            <h3>Step 1: Please upload your file here</h3>
-            <p>Drag and Drop | Upload from local</p>
-            <p>file type: xlsx, csv ...</p>
-          </a>
+        <div className="sub-container">
+          <div className="file-container">
+            <input type="file" className="file-handler" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"/>
+            <a href="#" className="file-inner">
+              <img className="file-img" src="/stack.png" />
+              <img className="file-img" src="/cloud.png" />
+              <h3>Step 1: Please upload your file here</h3>
+              <p>Drag and Drop | Upload from local</p>
+              <p>file type: xlsx, csv ...</p>
+            </a>
+          </div>
         </div>
       </main>
 
@@ -56,10 +60,9 @@ export default function Home() {
         }
 
         main {
-          padding: 5rem 0;
+          padding: 5rem;
           flex: 1;
           display: flex;
-          flex-direction: column;
           justify-content: center;
           align-items: center;
         }
@@ -103,8 +106,13 @@ export default function Home() {
         header {
           height: 70px;
           width: 100%;
+          padding: 0 5rem;
           position: sticky;
           box-shadow: 0px 1px 1px rgba(0, 124, 88, 0.04), 0px 9px 36px -10px rgba(0, 124, 88, 0.1);
+        }
+
+        .sub-container {
+          width: 50%;
         }
 
         header .logo {
@@ -157,7 +165,6 @@ export default function Home() {
         }
 
         .file-container {
-          display: flex;
           align-items: center;
           justify-content: center;
           flex-wrap: wrap;
@@ -169,6 +176,7 @@ export default function Home() {
           border: 2px dashed rgba(0, 124, 88, 0.16);
           border-radius: 17px;
           float: right;
+          padding: 30px;
         }
 
         .file-container * {
@@ -178,6 +186,7 @@ export default function Home() {
         
         .file-img {
           padding: 10px 20px;
+          text-align: center;
         }
 
         .file-handler {
@@ -222,6 +231,12 @@ export default function Home() {
         .logo {
           height: 1em;
           font-weight: 700;
+        }
+
+        @media (min-width: 768px) {
+          .sub-container {
+            width: 100%;
+          }
         }
 
         @media (max-width: 600px) {
